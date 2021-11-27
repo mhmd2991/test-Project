@@ -11,10 +11,13 @@
     /*border: 1px solid red;*/
 }
 
-
-
 html {
     scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../font/Myriad Pro Regular.ttf);
 }
 
 :root {
@@ -28,8 +31,10 @@ html {
     --mainTransition: .3s;
 }
 
+/*font-family: 'Pacifico', cursive;*/
+
 body {
-    font-family: 'Pacifico', cursive;
+    font-family: myFirstFont;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -80,3 +85,67 @@ a {
         width: 1200px;
     }
 }
+
+/*Start Header Section*/
+.header {}
+
+.header .container {}
+
+.header .container .top-header {
+    width: 100%;
+    height: 40px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--whiteColor);
+}
+
+.header .container .top-header .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.header .container .top-header .contact-info .phone,
+.header .container .top-header .contact-info .email {
+    display: flex;
+    gap: 5px;
+}
+
+.header .container .top-header .contact-info .email {
+    margin-left: 15px;
+}
+
+.header .container .top-header .contact-info .phone i,
+.header .container .top-header .contact-info .email i {
+    color: var(--blueColor);
+}
+
+.header .container .top-header .contact-info .phone p,
+.header .container .top-header .contact-info .email p {
+    font-size: 0.8rem;
+}
+
+.header .container .top-header .social-media {
+    display: flex;
+    align-items: center;
+}
+
+.header .container .top-header .social-media li {
+    margin-right: 22px;
+}
+
+.header .container .top-header .social-media li a {
+    font-size: 1.3rem;
+    color: var(--blackColor);
+}
+
+.header .container .top-header .social-media li a:hover {
+    color: var(--goldColor);
+}
+
+.header .container .top-header .social-media li a i {}
+
+/*End Header Section*/
