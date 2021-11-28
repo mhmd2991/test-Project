@@ -242,6 +242,7 @@ a {
 
     .header .navigation-bar .menu-bar li {
         margin-bottom: 20px;
+        margin-left: 0;
     }
 
     .header .toggle-menu {
